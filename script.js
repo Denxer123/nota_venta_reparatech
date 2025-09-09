@@ -100,12 +100,3 @@ equipments.forEach(element => {
     }
 
 });
-
-window.onload = function () {
-    // Aquí ya llenas tus datos normalmente...
-    // Por ejemplo: document.getElementById("company-name").textContent = "Mi Empresa";
-
-    // Y al final abres automáticamente la ventana de impresión
-    window.print();
-    console.log("cargado el documento desde JS");
-};
