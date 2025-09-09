@@ -1,1 +1,82 @@
-hola
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota Venta Reparatech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Empresa -->
+    <div class="company">
+        <div id="company_name" class="company_name"></div>
+        <div id="company_description" class="company_description"></div>
+        <div id="company_phones" class="company_phones"></div>
+        <div id="company_address" class="company_address"></div>
+    </div>
+
+
+    <!-- Cliente y Recibo -->
+
+    <table class="client">
+        <tr>
+            <td colspan="2">Nombres: <span id="client_name"></span> <br> Celular: <span id="client_phone"></span></td>
+            <td><br>Fecha: <span id="date_time"></span></td>
+            <td class="tecResp">Tecnico Responsable: <span id="technical_manager"></span><br>NOTA VENTA N°: <span
+                    id="num_ticket">
+                </span></td>
+        </tr>
+    </table>
+
+    <!-- equipos -->
+
+    <table class="devices">
+        <thead>
+            <tr>
+                <th class="device">Equipo</th>
+                <th class="repair">Reparación</th>
+                <th class="price">Precio</th>
+                <th class="observations">Ckeck List/Observaciones</th>
+                <th class="checklist">Programas</th>
+            </tr>
+        </thead>
+        <tbody id="equipments-table">
+            <!-- Aquí se insertarán las filas de equipos -->
+        </tbody>
+    </table>
+
+    <!-- Clausulas, Totales y Horario -->
+    <table class="totals-table">
+        <tr>
+            <td rowspan="2" class="clauses">
+                <span><strong>Nota:</strong><br>
+                    - Todo equipo se devolverá solo con su respectivo recibo o DNI.
+                    - Las garantías de pantallas es de 1 mes, solo en altas calidad, otras calidades no tienen
+                    garantías.
+                    - No se responde a las garantías por dañar el sello de seguridad o daños ocasionados por el
+                    cliente como caídas, golpes, daños por agua, humedad, mala manipulación, etc.
+                    - Todo equipo que no se recoja dentro de los 15 días hábiles, después de ser notificado, no
+                    tiene derecho a reclamos por el equipo</span>
+            </td>
+            <td class="totals">
+                <strong>Total:.......</strong><span id="total"></span> <br>
+                <strong>Adelanto:....</strong> <span id="advance"></span><br>
+                <strong>Resta:........</strong> <span id="rest"></span>
+            </td>
+        </tr>
+        <tr>
+            <td class="schedule">
+                <strong>HORARIO</strong><br>
+                <span id="company_horary"></span>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

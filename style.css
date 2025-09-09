@@ -1,0 +1,96 @@
+body {
+    width: 750px;
+}
+
+
+/* Empresa */
+
+.company {
+    text-align: center;
+}
+
+.company_phones {
+    text-decoration: underline;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+
+
+
+/* Cliente y Recibo */
+.client {
+    width: 100%;
+    margin-top: 10px;
+}
+
+table,
+th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px 10px;
+}
+
+.tecResp {
+    border-left: 1px solid black;
+    text-align: center;
+}
+
+
+
+/* Equipos a reparar */
+
+.devices {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: small;
+}
+
+.device {
+    width: 25%;
+}
+
+.repair {
+    width: 30%;
+}
+
+.price {
+    width: 10%;
+}
+
+.observations {
+    width: 25%;
+}
+
+.checklist {
+    width: 10%;
+}
+
+
+/* Clausulas, totales y Hotario */
+.totals-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.totals-table tr,
+th,
+td {
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+
+.clauses {
+    width: 70%;
+}
+
+.totals {
+    text-align: center;
+    padding: 0px;
+}
+
+.schedule {
+    text-align: center;
+}
