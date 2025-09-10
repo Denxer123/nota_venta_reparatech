@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota Venta Reparatech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- EMPRESA -->
+    <div class="company">
+        <div id="company_name" class="company_name"></div>
+        <div id="company_description" class="company_description"></div>
+        <div id="company_phones" class="company_phones"></div>
+    </div>
+
+
+
+    <!-- DATOS DE RECIBO -->
+    <table class="sales-note-table">
+        <thead>
+            <tr>
+                <th colspan="2">DATOS DE RECIBO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>N° Nota Venta</td>
+                <td id="num_ticket"></td>
+            </tr>
+            <tr>
+                <td class="sales-note-left">Tec Responsable:</td>
+                <td class="sales-note-rigth" id="technical_manager"></td>
+            </tr>
+
+            <tr>
+                <td>Fecha:</td>
+                <td id="date_time"></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <!-- DATOS DE CLIENTE -->
+
+    <table class="client-table">
+        <tr>
+            <th colspan="2">DATOS DE CLIENTE</th>
+        </tr>
+        <tr>
+            <td>Nombre:</td>
+            <td id="client_name"></td>
+        </tr>
+        <tr>
+            <td>Celular:</td>
+            <td id="client_phone"></td>
+        </tr>
+    </table>
+
+
+    <!-- equipos -->
+
+    <table class="equipments-table">
+        <thead>
+            <tr>
+                <th class="device" colspan="2">EQUIPOS EN REVISIÓN</th>
+            </tr>
+        </thead>
+        <tbody id="equipments-table">
+            <!-- Aquí se insertarán las filas de equipos -->
+        </tbody>
+    </table>
+
+
+    <!-- TOTALES -->
+    <table class="totals-table">
+        <tr>
+            <td class="total">
+                <strong>Total:</strong> <br><span id="total"></span><br>
+            </td>
+            <td>
+                <strong>Adelanto:</strong> <br> <span id="advance"></span><br>
+            </td>
+            <td>
+                <strong>Resta:</strong> <br> <span id="rest"></span>
+            </td>
+        </tr>
+
+    </table>
+
+
+    <!-- CLAUSULAS DE LA EMPRESA -->
+
+    <table class="company-clauses">
+        <tr>
+            <td rowspan="2" class="clausulas"> <strong>CLAUSULAS:</strong> <br>
+                <div class="clauses" id="company_clauses"></div>
+            </td>
+        </tr>
+    </table>
+
+    <!-- HORARIO -->
+    <table class="company-horary">
+        <td style="text-align:center;">
+            <strong>Horario:</strong><br>
+            <span id="company_horary"></span>
+        </td>
+    </table>
+
+    <!-- DIRECCIÓN -->
+    <table class="company_address">
+        <tr>
+            <td> <span id="company_address"></span></td>
+        </tr>
+    </table>
+
+</body>
+
+<script src="script.js"></script>
+
+<!-- <script>
+    window.onload = function () {
+        window.print();
+        console.log("cargado el documento desde HTML");
+    };
+</script> -->
+
+</html>
